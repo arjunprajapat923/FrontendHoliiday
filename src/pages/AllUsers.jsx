@@ -26,7 +26,7 @@ const AllUsers = () => {
         const user = auth.currentUser;
         if (!user) return;
         const token = await user.getIdToken();
-        const res = await axios.get('http://localhost:8000/api/users/all', {
+        const res = await axios.get('https://backendholiday.onrender.com/api/users/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -125,4 +125,8 @@ MIT
 
 ---
 
+<<<<<<< HEAD
 > **Start the backend server before running this project!**
+=======
+> **Start the backend server before running this project!**
+>>>>>>> d228960 (new updates for my new files)

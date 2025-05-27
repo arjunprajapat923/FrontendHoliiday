@@ -19,7 +19,7 @@ const UserProfile = () => {
         if (user) {
           const token = await user.getIdToken();
           const res = await axios.post(
-            'http://localhost:8000/api/users/firebase-login',
+            'https://backendholiday.onrender.com/api/users/firebase-login',
             { token },
             {
               headers: {

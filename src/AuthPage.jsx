@@ -14,7 +14,7 @@ async function notifyBackend() {
   const user = auth.currentUser;
   if (user) {
     const idToken = await user.getIdToken();
-    await fetch('http://localhost:8000/api/users/firebase-login', {
+    await fetch('https://backendholiday.onrender.com/api/users/firebase-login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json',
                   'Authorization': `Bearer ${idToken}`
